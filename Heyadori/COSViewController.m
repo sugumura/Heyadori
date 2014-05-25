@@ -2,101 +2,64 @@
 #import <MobileCoreServices/MobileCoreServices.h>
 #import "COuiView.h"
 
-@interface COSViewController ()
-
-@end
-
 @implementation COSViewController
 
-- (void)viewDidAppear:(BOOL)animated
+- (void)didReceiveMemoryWarning
 {
-    [super viewDidAppear:animated];
+    // Releases the view if it doesn't have a superview.
+    [super didReceiveMemoryWarning];
     
-    [self showUIImagePicker];
+    // Release any cached data, images, etc that aren't in use.
 }
 
-- (void)showUIImagePicker
-{
-    // カメラが使用可能かどうか判定する
-    if (![UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
-        return;
-    }
-    
-    
-    // UIImagePickerControllerのインスタンスを生成
-    imagePickerController = [[UIImagePickerController alloc] init];
-    
-    // デリゲートを設定
-    //imagePickerController.delegate = self;
-    
-    // 画像の取得先をカメラに設定
-    imagePickerController.sourceType = UIImagePickerControllerSourceTypeCamera;
-    //ムービーモードにする
-    imagePickerController.mediaTypes = [[NSArray alloc] initWithObjects:(NSString *)kUTTypeMovie , nil];
-    //クオリティを最大にする
-    imagePickerController.videoQuality = UIImagePickerControllerQualityTypeHigh;
-    //撮影最大時間を  300 秒にする
-    imagePickerController.videoMaximumDuration = 300;
-    
-    // 画像取得後に編集するかどうか（デフォルトはNO）
-    imagePickerController.allowsEditing = YES;
-    
-    //オーバレイ表示
-    imagePickerController.cameraOverlayView = couiView;
-    
-    // 撮影画面をモーダルビューとして表示する
-    [self presentViewController:imagePickerController animated:YES completion:nil];
-    
-    
-}
+#pragma mark - View lifecycle
 
+// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    imagePicker = [[UIImagePickerController alloc] init];
+    
+    //UIパーツを置くView「ARueView」を非表示にしておく。表示したい場合は消す
+    [couiView removeFromSuperview];
+}
 
 //カメラ画像表示+オーバーレイ
 -(IBAction)CameraOn:(id)sender {
     
     if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
-        imagePickerController.sourceType = UIImagePickerControllerSourceTypeCamera;
-        imagePickerController.showsCameraControls = NO;
-        //オーバーレイ
-        imagePickerController.cameraOverlayView = couiView;
+        imagePicker.sourceType = UIImagePickerControllerSourceTypeCamera;
+        //ムービーモードにする
+        imagePicker.mediaTypes = [[NSArray alloc] initWithObjects:(NSString *)kUTTypeMovie , nil];
+        //クオリティを最大にする
+        imagePicker.videoQuality = UIImagePickerControllerQualityTypeHigh;
+        //撮影最大時間を  300 秒にする
+        imagePicker.videoMaximumDuration = 300;
         
-        [self presentModalViewController:imagePickerController animated:NO];
+        // 画像取得後に編集するかどうか（デフォルトはNO）
+        imagePicker.allowsEditing = YES;
+        
+        imagePicker.showsCameraControls = NO;
+        //オーバーレイ
+        imagePicker.cameraOverlayView = couiView;
+        
+        [self presentModalViewController:imagePicker animated:NO];
     }
     
 }
 
-
-// 画像が選択された時に呼ばれるデリゲートメソッド
-- (void)imagePickerController:(UIImagePickerController *)picker
-        didFinishPickingImage:(UIImage *)image
-                  editingInfo:(NSDictionary *)editingInfo
+- (void)viewDidUnload
 {
-    // モーダルビューを閉じる
-    [self dismissViewControllerAnimated:YES completion:nil];
-    
-    // 渡されてきた画像をフォトアルバムに保存
-    UIImageWriteToSavedPhotosAlbum(image, self, @selector(targetImage:didFinishSavingWithError:contextInfo:), NULL);
+    [super viewDidUnload];
+    // Release any retained subviews of the main view.
+    // e.g. self.myOutlet = nil;
 }
 
-// 画像の選択がキャンセルされた時に呼ばれるデリゲートメソッド
-- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-    // モーダルビューを閉じる
-    [self dismissViewControllerAnimated:YES completion:nil];
-    
-    // キャンセルされたときの処理を記述・・・
+    // Return YES for supported orientations
+    return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
-// 画像の保存完了時に呼ばれるメソッド
-- (void)targetImage:(UIImage *)image
-didFinishSavingWithError:(NSError *)error
-        contextInfo:(void *)context
-{
-    if (error) {
-        // 保存失敗時の処理
-    } else {
-        // 保存成功時の処理
-    }
-}
 
 @end

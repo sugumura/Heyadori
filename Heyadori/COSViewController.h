@@ -19,7 +19,7 @@
 @interface COSViewController : UIViewController <UIImagePickerControllerDelegate>
 {
     IBOutlet COuiView *couiView;
-    UIImagePickerController *imagePickerController;
+    UIImagePickerController *imagePicker;
 }
 
 -(IBAction)CameraOn:(id)sender;
