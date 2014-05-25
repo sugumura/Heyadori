@@ -1,5 +1,6 @@
 #import "COSViewController.h"
 #import <MobileCoreServices/MobileCoreServices.h>
+#import "COuiView.h"
 
 @interface COSViewController ()
 
@@ -22,7 +23,6 @@
     }
     
     
-    
     // UIImagePickerControllerのインスタンスを生成
     UIImagePickerController *imagePickerController = [[UIImagePickerController alloc] init];
     
@@ -31,18 +31,26 @@
     
     // 画像の取得先をカメラに設定
     imagePickerController.sourceType = UIImagePickerControllerSourceTypeCamera;
-    
+    //ムービーモードにする
     imagePickerController.mediaTypes = [[NSArray alloc] initWithObjects:(NSString *)kUTTypeMovie , nil];
-    
+    //クオリティを最大にする
     imagePickerController.videoQuality = UIImagePickerControllerQualityTypeHigh;
-    
+    //撮影最大時間を  300 秒にする
     imagePickerController.videoMaximumDuration = 300;
+    
     // 画像取得後に編集するかどうか（デフォルトはNO）
     imagePickerController.allowsEditing = YES;
     
+    //
+    imagePickerController.cameraOverlayView = couiView;
+    
     // 撮影画面をモーダルビューとして表示する
     [self presentViewController:imagePickerController animated:YES completion:nil];
+    
+    
 }
+
+
 
 // 画像が選択された時に呼ばれるデリゲートメソッド
 - (void)imagePickerController:(UIImagePickerController *)picker

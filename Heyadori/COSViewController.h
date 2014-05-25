@@ -14,7 +14,13 @@
 @class AVPlayer;
 @class AVPlayerView;
 
+@class COuiView;
+
 @interface COSViewController : UIViewController <UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 {
+    IBOutlet COuiView *couiView;
 }
+
+-(IBAction)CameraOn:(id)sender;
+
 @end
