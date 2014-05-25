@@ -1,13 +1,20 @@
 //
-//  COSViewController.h
-//  Heyadori
+//  CameraViewController.h
+//  AfricanSafari
 //
-//  Created by Suguru Murakami on 5/25/14.
-//  Copyright (c) 2014 FUKUOKA for COSPLAYTHONS2014. All rights reserved.
+//  Created by Norifumi Kawamoto on 12/06/18.
+//  Copyright (c) 2012年 __MyCompanyName__. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
+#import <CoreMedia/CoreMedia.h>
 
-@interface COSViewController : UIViewController
+@class ALAssetsLibrary;
+@class AVPlayer;
+@class AVPlayerView;
 
+@interface COSViewController : UIViewController <UINavigationControllerDelegate, UIImagePickerControllerDelegate>
+{
+}
 @end

@@ -1,11 +1,3 @@
-//
-//  COSViewController.m
-//  Heyadori
-//
-//  Created by Suguru Murakami on 5/25/14.
-//  Copyright (c) 2014 FUKUOKA for COSPLAYTHONS2014. All rights reserved.
-//
-
 #import "COSViewController.h"
 
 @interface COSViewController ()
@@ -14,16 +6,67 @@
 
 @implementation COSViewController
 
-- (void)viewDidLoad
+- (void)viewDidAppear:(BOOL)animated
 {
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    [super viewDidAppear:animated];
+    
+    [self showUIImagePicker];
 }
 
-- (void)didReceiveMemoryWarning
+- (void)showUIImagePicker
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    // カメラが使用可能かどうか判定する
+    if (![UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
+        return;
+    }
+    
+    // UIImagePickerControllerのインスタンスを生成
+    UIImagePickerController *imagePickerController = [[UIImagePickerController alloc] init];
+    
+    // デリゲートを設定
+    imagePickerController.delegate = self;
+    
+    // 画像の取得先をカメラに設定
+    imagePickerController.sourceType = UIImagePickerControllerSourceTypeCamera;
+    
+    // 画像取得後に編集するかどうか（デフォルトはNO）
+    imagePickerController.allowsEditing = YES;
+    
+    // 撮影画面をモーダルビューとして表示する
+    [self presentViewController:imagePickerController animated:YES completion:nil];
+}
+
+// 画像が選択された時に呼ばれるデリゲートメソッド
+- (void)imagePickerController:(UIImagePickerController *)picker
+        didFinishPickingImage:(UIImage *)image
+                  editingInfo:(NSDictionary *)editingInfo
+{
+    // モーダルビューを閉じる
+    [self dismissViewControllerAnimated:YES completion:nil];
+    
+    // 渡されてきた画像をフォトアルバムに保存
+    UIImageWriteToSavedPhotosAlbum(image, self, @selector(targetImage:didFinishSavingWithError:contextInfo:), NULL);
+}
+
+// 画像の選択がキャンセルされた時に呼ばれるデリゲートメソッド
+- (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker
+{
+    // モーダルビューを閉じる
+    [self dismissViewControllerAnimated:YES completion:nil];
+    
+    // キャンセルされたときの処理を記述・・・
+}
+
+// 画像の保存完了時に呼ばれるメソッド
+- (void)targetImage:(UIImage *)image
+didFinishSavingWithError:(NSError *)error
+        contextInfo:(void *)context
+{
+    if (error) {
+        // 保存失敗時の処理
+    } else {
+        // 保存成功時の処理
+    }
 }
 
 @end
