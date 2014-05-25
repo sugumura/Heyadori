@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8C9170001931C65A006EF5A8 /* COuiView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C916FFF1931C65A006EF5A8 /* COuiView.m */; };
+		8C9170021931C7D7006EF5A8 /* COSuiView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C9170011931C7D7006EF5A8 /* COSuiView.xib */; };
+		8C9170061931C97C006EF5A8 /* mooboo.png in Resources */ = {isa = PBXBuildFile; fileRef = 8C9170051931C97C006EF5A8 /* mooboo.png */; };
 		BBD702DF1931A5CF00491186 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBD702DE1931A5CF00491186 /* Foundation.framework */; };
 		BBD702E11931A5CF00491186 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBD702E01931A5CF00491186 /* CoreGraphics.framework */; };
 		BBD702E31931A5CF00491186 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBD702E21931A5CF00491186 /* UIKit.framework */; };
@@ -42,6 +45,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8C916FFE1931C65A006EF5A8 /* COuiView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = COuiView.h; sourceTree = "<group>"; };
+		8C916FFF1931C65A006EF5A8 /* COuiView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = COuiView.m; sourceTree = "<group>"; };
+		8C9170011931C7D7006EF5A8 /* COSuiView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = COSuiView.xib; sourceTree = "<group>"; };
+		8C9170051931C97C006EF5A8 /* mooboo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mooboo.png; sourceTree = "<group>"; };
 		BBD702DB1931A5CF00491186 /* Heyadori.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Heyadori.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBD702DE1931A5CF00491186 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BBD702E01931A5CF00491186 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -103,6 +110,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8C9170041931C951006EF5A8 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				8C9170051931C97C006EF5A8 /* mooboo.png */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
 		BBD702D21931A5CF00491186 = {
 			isa = PBXGroup;
 			children = (
@@ -144,6 +159,7 @@
 		BBD702E41931A5CF00491186 /* Heyadori */ = {
 			isa = PBXGroup;
 			children = (
+				8C9170041931C951006EF5A8 /* Resource */,
 				BBD702ED1931A5CF00491186 /* COSAppDelegate.h */,
 				BBD702EE1931A5CF00491186 /* COSAppDelegate.m */,
 				BBD702F01931A5CF00491186 /* Main.storyboard */,
@@ -151,6 +167,8 @@
 				BBD702F41931A5CF00491186 /* COSViewController.m */,
 				BBD702F61931A5CF00491186 /* Images.xcassets */,
 				BBD702E51931A5CF00491186 /* Supporting Files */,
+				8C916FFE1931C65A006EF5A8 /* COuiView.h */,
+				8C916FFF1931C65A006EF5A8 /* COuiView.m */,
 			);
 			path = Heyadori;
 			sourceTree = "<group>";
@@ -162,6 +180,7 @@
 				BBD702E71931A5CF00491186 /* InfoPlist.strings */,
 				BBD702EA1931A5CF00491186 /* main.m */,
 				BBD702EC1931A5CF00491186 /* Heyadori-Prefix.pch */,
+				8C9170011931C7D7006EF5A8 /* COSuiView.xib */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -261,7 +280,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C9170021931C7D7006EF5A8 /* COSuiView.xib in Resources */,
 				BBD702F71931A5CF00491186 /* Images.xcassets in Resources */,
+				8C9170061931C97C006EF5A8 /* mooboo.png in Resources */,
 				BBD702E91931A5CF00491186 /* InfoPlist.strings in Resources */,
 				BBD702F21931A5CF00491186 /* Main.storyboard in Resources */,
 			);
@@ -282,6 +303,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C9170001931C65A006EF5A8 /* COuiView.m in Sources */,
 				BBD702EF1931A5CF00491186 /* COSAppDelegate.m in Sources */,
 				BBD702EB1931A5CF00491186 /* main.m in Sources */,
 				BBD702F51931A5CF00491186 /* COSViewController.m in Sources */,
@@ -489,6 +511,7 @@
 				BBD7030F1931A5CF00491186 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BBD703101931A5CF00491186 /* Build configuration list for PBXNativeTarget "HeyadoriTests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +520,7 @@
 				BBD703121931A5CF00491186 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
