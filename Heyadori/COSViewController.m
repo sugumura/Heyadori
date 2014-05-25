@@ -1,4 +1,5 @@
 #import "COSViewController.h"
+#import <MobileCoreServices/MobileCoreServices.h>
 
 @interface COSViewController ()
 
@@ -20,6 +21,8 @@
         return;
     }
     
+    
+    
     // UIImagePickerControllerのインスタンスを生成
     UIImagePickerController *imagePickerController = [[UIImagePickerController alloc] init];
     
@@ -29,6 +32,11 @@
     // 画像の取得先をカメラに設定
     imagePickerController.sourceType = UIImagePickerControllerSourceTypeCamera;
     
+    imagePickerController.mediaTypes = [[NSArray alloc] initWithObjects:(NSString *)kUTTypeMovie , nil];
+    
+    imagePickerController.videoQuality = UIImagePickerControllerQualityTypeHigh;
+    
+    imagePickerController.videoMaximumDuration = 300;
     // 画像取得後に編集するかどうか（デフォルトはNO）
     imagePickerController.allowsEditing = YES;
     
