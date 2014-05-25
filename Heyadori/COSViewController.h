@@ -16,9 +16,10 @@
 
 @class COuiView;
 
-@interface COSViewController : UIViewController <UINavigationControllerDelegate, UIImagePickerControllerDelegate>
+@interface COSViewController : UIViewController <UIImagePickerControllerDelegate>
 {
     IBOutlet COuiView *couiView;
+    UIImagePickerController *imagePickerController;
 }
 
 -(IBAction)CameraOn:(id)sender;
