@@ -21,6 +21,14 @@
 		BBD703001931A5CF00491186 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBD702E21931A5CF00491186 /* UIKit.framework */; };
 		BBD703081931A5CF00491186 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BBD703061931A5CF00491186 /* InfoPlist.strings */; };
 		BBD7030A1931A5CF00491186 /* HeyadoriTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BBD703091931A5CF00491186 /* HeyadoriTests.m */; };
+		BBD703141931A87800491186 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBD703131931A87800491186 /* AVFoundation.framework */; };
+		BBD703161931A88000491186 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBD703151931A88000491186 /* QuartzCore.framework */; };
+		BBD703181931A88700491186 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBD703171931A88700491186 /* CoreVideo.framework */; };
+		BBD7031A1931A88E00491186 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBD703191931A88E00491186 /* CoreMedia.framework */; };
+		BBD7031C1931A89500491186 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBD7031B1931A89500491186 /* AssetsLibrary.framework */; };
+		BBD7031E1931A8AB00491186 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBD7031D1931A8AB00491186 /* MobileCoreServices.framework */; };
+		BBD703201931A8B100491186 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBD7031F1931A8B100491186 /* CoreLocation.framework */; };
+		BBD703221931A8B900491186 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBD703211931A8B900491186 /* AudioToolbox.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +61,14 @@
 		BBD703051931A5CF00491186 /* HeyadoriTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HeyadoriTests-Info.plist"; sourceTree = "<group>"; };
 		BBD703071931A5CF00491186 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BBD703091931A5CF00491186 /* HeyadoriTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeyadoriTests.m; sourceTree = "<group>"; };
+		BBD703131931A87800491186 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		BBD703151931A88000491186 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		BBD703171931A88700491186 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		BBD703191931A88E00491186 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		BBD7031B1931A89500491186 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		BBD7031D1931A8AB00491186 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		BBD7031F1931A8B100491186 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		BBD703211931A8B900491186 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +76,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBD703221931A8B900491186 /* AudioToolbox.framework in Frameworks */,
+				BBD703201931A8B100491186 /* CoreLocation.framework in Frameworks */,
+				BBD7031E1931A8AB00491186 /* MobileCoreServices.framework in Frameworks */,
+				BBD7031C1931A89500491186 /* AssetsLibrary.framework in Frameworks */,
+				BBD7031A1931A88E00491186 /* CoreMedia.framework in Frameworks */,
+				BBD703181931A88700491186 /* CoreVideo.framework in Frameworks */,
+				BBD703161931A88000491186 /* QuartzCore.framework in Frameworks */,
+				BBD703141931A87800491186 /* AVFoundation.framework in Frameworks */,
 				BBD702E11931A5CF00491186 /* CoreGraphics.framework in Frameworks */,
 				BBD702E31931A5CF00491186 /* UIKit.framework in Frameworks */,
 				BBD702DF1931A5CF00491186 /* Foundation.framework in Frameworks */,
@@ -101,6 +125,14 @@
 		BBD702DD1931A5CF00491186 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BBD703211931A8B900491186 /* AudioToolbox.framework */,
+				BBD7031F1931A8B100491186 /* CoreLocation.framework */,
+				BBD7031D1931A8AB00491186 /* MobileCoreServices.framework */,
+				BBD7031B1931A89500491186 /* AssetsLibrary.framework */,
+				BBD703191931A88E00491186 /* CoreMedia.framework */,
+				BBD703171931A88700491186 /* CoreVideo.framework */,
+				BBD703151931A88000491186 /* QuartzCore.framework */,
+				BBD703131931A87800491186 /* AVFoundation.framework */,
 				BBD702DE1931A5CF00491186 /* Foundation.framework */,
 				BBD702E01931A5CF00491186 /* CoreGraphics.framework */,
 				BBD702E21931A5CF00491186 /* UIKit.framework */,
