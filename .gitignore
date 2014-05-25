@@ -1,0 +1,10 @@
+### Mac OS ###
+.DS_Store
+
+### Xcode ###
+build
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+!*.xcworkspace/contents.xcworkspacedata
+*.xccheckout
+

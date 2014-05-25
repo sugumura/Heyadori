@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BBD702DF1931A5CF00491186 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBD702DE1931A5CF00491186 /* Foundation.framework */; };
+		BBD702E11931A5CF00491186 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBD702E01931A5CF00491186 /* CoreGraphics.framework */; };
+		BBD702E31931A5CF00491186 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBD702E21931A5CF00491186 /* UIKit.framework */; };
+		BBD702E91931A5CF00491186 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BBD702E71931A5CF00491186 /* InfoPlist.strings */; };
+		BBD702EB1931A5CF00491186 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BBD702EA1931A5CF00491186 /* main.m */; };
+		BBD702EF1931A5CF00491186 /* COSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BBD702EE1931A5CF00491186 /* COSAppDelegate.m */; };
+		BBD702F21931A5CF00491186 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBD702F01931A5CF00491186 /* Main.storyboard */; };
+		BBD702F51931A5CF00491186 /* COSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBD702F41931A5CF00491186 /* COSViewController.m */; };
+		BBD702F71931A5CF00491186 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBD702F61931A5CF00491186 /* Images.xcassets */; };
+		BBD702FE1931A5CF00491186 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBD702FD1931A5CF00491186 /* XCTest.framework */; };
+		BBD702FF1931A5CF00491186 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBD702DE1931A5CF00491186 /* Foundation.framework */; };
+		BBD703001931A5CF00491186 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBD702E21931A5CF00491186 /* UIKit.framework */; };
+		BBD703081931A5CF00491186 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BBD703061931A5CF00491186 /* InfoPlist.strings */; };
+		BBD7030A1931A5CF00491186 /* HeyadoriTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BBD703091931A5CF00491186 /* HeyadoriTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BBD703011931A5CF00491186 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BBD702D31931A5CF00491186 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BBD702DA1931A5CF00491186;
+			remoteInfo = Heyadori;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BBD702DB1931A5CF00491186 /* Heyadori.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Heyadori.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBD702DE1931A5CF00491186 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BBD702E01931A5CF00491186 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		BBD702E21931A5CF00491186 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		BBD702E61931A5CF00491186 /* Heyadori-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Heyadori-Info.plist"; sourceTree = "<group>"; };
+		BBD702E81931A5CF00491186 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BBD702EA1931A5CF00491186 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BBD702EC1931A5CF00491186 /* Heyadori-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Heyadori-Prefix.pch"; sourceTree = "<group>"; };
+		BBD702ED1931A5CF00491186 /* COSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = COSAppDelegate.h; sourceTree = "<group>"; };
+		BBD702EE1931A5CF00491186 /* COSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = COSAppDelegate.m; sourceTree = "<group>"; };
+		BBD702F11931A5CF00491186 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BBD702F31931A5CF00491186 /* COSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = COSViewController.h; sourceTree = "<group>"; };
+		BBD702F41931A5CF00491186 /* COSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = COSViewController.m; sourceTree = "<group>"; };
+		BBD702F61931A5CF00491186 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BBD702FC1931A5CF00491186 /* HeyadoriTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeyadoriTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBD702FD1931A5CF00491186 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		BBD703051931A5CF00491186 /* HeyadoriTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HeyadoriTests-Info.plist"; sourceTree = "<group>"; };
+		BBD703071931A5CF00491186 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BBD703091931A5CF00491186 /* HeyadoriTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HeyadoriTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BBD702D81931A5CF00491186 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBD702E11931A5CF00491186 /* CoreGraphics.framework in Frameworks */,
+				BBD702E31931A5CF00491186 /* UIKit.framework in Frameworks */,
+				BBD702DF1931A5CF00491186 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBD702F91931A5CF00491186 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBD702FE1931A5CF00491186 /* XCTest.framework in Frameworks */,
+				BBD703001931A5CF00491186 /* UIKit.framework in Frameworks */,
+				BBD702FF1931A5CF00491186 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BBD702D21931A5CF00491186 = {
+			isa = PBXGroup;
+			children = (
+				BBD702E41931A5CF00491186 /* Heyadori */,
+				BBD703031931A5CF00491186 /* HeyadoriTests */,
+				BBD702DD1931A5CF00491186 /* Frameworks */,
+				BBD702DC1931A5CF00491186 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BBD702DC1931A5CF00491186 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BBD702DB1931A5CF00491186 /* Heyadori.app */,
+				BBD702FC1931A5CF00491186 /* HeyadoriTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BBD702DD1931A5CF00491186 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BBD702DE1931A5CF00491186 /* Foundation.framework */,
+				BBD702E01931A5CF00491186 /* CoreGraphics.framework */,
+				BBD702E21931A5CF00491186 /* UIKit.framework */,
+				BBD702FD1931A5CF00491186 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BBD702E41931A5CF00491186 /* Heyadori */ = {
+			isa = PBXGroup;
+			children = (
+				BBD702ED1931A5CF00491186 /* COSAppDelegate.h */,
+				BBD702EE1931A5CF00491186 /* COSAppDelegate.m */,
+				BBD702F01931A5CF00491186 /* Main.storyboard */,
+				BBD702F31931A5CF00491186 /* COSViewController.h */,
+				BBD702F41931A5CF00491186 /* COSViewController.m */,
+				BBD702F61931A5CF00491186 /* Images.xcassets */,
+				BBD702E51931A5CF00491186 /* Supporting Files */,
+			);
+			path = Heyadori;
+			sourceTree = "<group>";
+		};
+		BBD702E51931A5CF00491186 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BBD702E61931A5CF00491186 /* Heyadori-Info.plist */,
+				BBD702E71931A5CF00491186 /* InfoPlist.strings */,
+				BBD702EA1931A5CF00491186 /* main.m */,
+				BBD702EC1931A5CF00491186 /* Heyadori-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BBD703031931A5CF00491186 /* HeyadoriTests */ = {
+			isa = PBXGroup;
+			children = (
+				BBD703091931A5CF00491186 /* HeyadoriTests.m */,
+				BBD703041931A5CF00491186 /* Supporting Files */,
+			);
+			path = HeyadoriTests;
+			sourceTree = "<group>";
+		};
+		BBD703041931A5CF00491186 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BBD703051931A5CF00491186 /* HeyadoriTests-Info.plist */,
+				BBD703061931A5CF00491186 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BBD702DA1931A5CF00491186 /* Heyadori */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BBD7030D1931A5CF00491186 /* Build configuration list for PBXNativeTarget "Heyadori" */;
+			buildPhases = (
+				BBD702D71931A5CF00491186 /* Sources */,
+				BBD702D81931A5CF00491186 /* Frameworks */,
+				BBD702D91931A5CF00491186 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Heyadori;
+			productName = Heyadori;
+			productReference = BBD702DB1931A5CF00491186 /* Heyadori.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BBD702FB1931A5CF00491186 /* HeyadoriTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BBD703101931A5CF00491186 /* Build configuration list for PBXNativeTarget "HeyadoriTests" */;
+			buildPhases = (
+				BBD702F81931A5CF00491186 /* Sources */,
+				BBD702F91931A5CF00491186 /* Frameworks */,
+				BBD702FA1931A5CF00491186 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BBD703021931A5CF00491186 /* PBXTargetDependency */,
+			);
+			name = HeyadoriTests;
+			productName = HeyadoriTests;
+			productReference = BBD702FC1931A5CF00491186 /* HeyadoriTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BBD702D31931A5CF00491186 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = COS;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "FUKUOKA for COSPLAYTHONS2014";
+				TargetAttributes = {
+					BBD702FB1931A5CF00491186 = {
+						TestTargetID = BBD702DA1931A5CF00491186;
+					};
+				};
+			};
+			buildConfigurationList = BBD702D61931A5CF00491186 /* Build configuration list for PBXProject "Heyadori" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BBD702D21931A5CF00491186;
+			productRefGroup = BBD702DC1931A5CF00491186 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BBD702DA1931A5CF00491186 /* Heyadori */,
+				BBD702FB1931A5CF00491186 /* HeyadoriTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BBD702D91931A5CF00491186 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBD702F71931A5CF00491186 /* Images.xcassets in Resources */,
+				BBD702E91931A5CF00491186 /* InfoPlist.strings in Resources */,
+				BBD702F21931A5CF00491186 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBD702FA1931A5CF00491186 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBD703081931A5CF00491186 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BBD702D71931A5CF00491186 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBD702EF1931A5CF00491186 /* COSAppDelegate.m in Sources */,
+				BBD702EB1931A5CF00491186 /* main.m in Sources */,
+				BBD702F51931A5CF00491186 /* COSViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBD702F81931A5CF00491186 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBD7030A1931A5CF00491186 /* HeyadoriTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BBD703021931A5CF00491186 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BBD702DA1931A5CF00491186 /* Heyadori */;
+			targetProxy = BBD703011931A5CF00491186 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BBD702E71931A5CF00491186 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BBD702E81931A5CF00491186 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		BBD702F01931A5CF00491186 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BBD702F11931A5CF00491186 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BBD703061931A5CF00491186 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BBD703071931A5CF00491186 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BBD7030B1931A5CF00491186 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BBD7030C1931A5CF00491186 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BBD7030E1931A5CF00491186 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Heyadori/Heyadori-Prefix.pch";
+				INFOPLIST_FILE = "Heyadori/Heyadori-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		BBD7030F1931A5CF00491186 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Heyadori/Heyadori-Prefix.pch";
+				INFOPLIST_FILE = "Heyadori/Heyadori-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		BBD703111931A5CF00491186 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Heyadori.app/Heyadori";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Heyadori/Heyadori-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "HeyadoriTests/HeyadoriTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		BBD703121931A5CF00491186 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Heyadori.app/Heyadori";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Heyadori/Heyadori-Prefix.pch";
+				INFOPLIST_FILE = "HeyadoriTests/HeyadoriTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BBD702D61931A5CF00491186 /* Build configuration list for PBXProject "Heyadori" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBD7030B1931A5CF00491186 /* Debug */,
+				BBD7030C1931A5CF00491186 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BBD7030D1931A5CF00491186 /* Build configuration list for PBXNativeTarget "Heyadori" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBD7030E1931A5CF00491186 /* Debug */,
+				BBD7030F1931A5CF00491186 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BBD703101931A5CF00491186 /* Build configuration list for PBXNativeTarget "HeyadoriTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBD703111931A5CF00491186 /* Debug */,
+				BBD703121931A5CF00491186 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BBD702D31931A5CF00491186 /* Project object */;
+}
